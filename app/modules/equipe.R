@@ -96,20 +96,20 @@ equipeUI <- function(id) {
             tags$ul(class = "member-role",
                     tags$li("Pesquisador extensionista")
             ),
-            # Membro1
-            div(class = "member-card",
-                tags$img(src = "img/clara.jpeg", height = "100px", class = "member-photo"),
-                div(class = "member-name", "Clara Martins Vallone "),
-                tags$ul(class = "member-role",
-                        tags$li("Pesquisador extensionista")
-                ),
-                a(icon("linkedin"), href = "https://www.linkedin.com/in/clara-martins-vallone-3aa297351?utm_source=share_via&utm_content=profile&utm_medium=member_android", class = "icon-btn", target = "_blank"),
-                a(icon("file-alt"), href = "https://lattes.cnpq.br/4219162404938632", class = "icon-btn", target = "_blank"),
-                a(icon("envelope"), href = "claramvufmg@gmail.com", class = "icon-btn")
-            ),
             a(icon("linkedin"), href = "https://linkedin.com/in/caiqueizidr", class = "icon-btn", target = "_blank"),
             a(icon("file-alt"), href = "https://lattes.cnpq.br/9300533003335560", class = "icon-btn", target = "_blank"),
             a(icon("envelope"), href = "caiqueizidoro369@gmail.com", class = "icon-btn")
+        ),
+        # Membro1
+        div(class = "member-card",
+            tags$img(src = "img/clara.jpeg", height = "100px", class = "member-photo"),
+            div(class = "member-name", "Clara Martins Vallone "),
+            tags$ul(class = "member-role",
+                    tags$li("Pesquisador extensionista")
+            ),
+            a(icon("linkedin"), href = "https://www.linkedin.com/in/clara-martins-vallone-3aa297351?utm_source=share_via&utm_content=profile&utm_medium=member_android", class = "icon-btn", target = "_blank"),
+            a(icon("file-alt"), href = "https://lattes.cnpq.br/4219162404938632", class = "icon-btn", target = "_blank"),
+            a(icon("envelope"), href = "claramvufmg@gmail.com", class = "icon-btn")
         ),
         div(class = "member-card",
             tags$img(src = "img/cristiano.jpeg", height = "100px", class = "member-photo"),
