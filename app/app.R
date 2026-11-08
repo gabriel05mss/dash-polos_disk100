@@ -19,16 +19,16 @@ library(tidyr)
 
 # Diagnóstico de carregamento
 modulos <- c(
+  "cor_raca.R",
   "Psexo.R",
   "Pidade.R",
-  "deficiente.R",
-  "equipe.R",
-  "cor_raca.R",
   "escolaridade.R",
-  "grupo_vulneravel.R",
+  "deficiente.R",
   "orientacao_sexual.R",
   "relacao_suspeito.R",
-  "tipo_atendimento.R"
+  "tipo_atendimento.R",
+  "grupo_vulneravel.R",
+  "equipe.R"
 )
 
 for (modulo in modulos) {
