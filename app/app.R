@@ -182,16 +182,16 @@ server <- function(input, output, session) {
     user_logged(TRUE)
   })
   
+  callModule(Pcor_racaServer, "cor_raca")
   callModule(PsexoServer, "Psexo")
   callModule(PidadeServer, "Pidade")
-  callModule(deficienteServer, "deficiente")
-  callModule(equipeServer, "equipe")
   callModule(PescolaridadeServer, "escolaridade")
-  callModule(PgrupovServer, "grupo_vulneravel")
-  callModule(PorientacaoServer, "orientacao_sexual")
-  callModule(Pcor_racaServer, "cor_raca")
+  callModule(deficienteServer, "deficiente")
   callModule(PsuspeitoServer, "relacao_suspeito")
+  callModule(PorientacaoServer, "orientacao_sexual")
+  callModule(PgrupovServer, "grupo_vulneravel")
   callModule(Ptipo_atendimentoServer, "tipo_atendimento")
+  callModule(equipeServer, "equipe")
 }
 
 shinyApp(ui = ui, server = server)
