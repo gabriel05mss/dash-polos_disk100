@@ -4,7 +4,7 @@ PsexoUI <- function(id) {
     
     fluidRow(
       box(
-        title = h1('Sexo x Denuncias - Dados disk 100', align = 'center'), #trocar titulo
+        title = h1('Sexo x Denuncias - Dados Disque 100', align = 'center'), #trocar titulo
         width = 12,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -22,7 +22,7 @@ PsexoUI <- function(id) {
     fluidRow(
       
       box(
-        title = h1('Distrubuição sexo', align = 'center'), #trocar titulo
+        title = h1('Distrubuição Sexo', align = 'center'), #trocar titulo
         width = 6,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -30,7 +30,7 @@ PsexoUI <- function(id) {
       ),
       
       box(
-        title = h1('trocar', align = 'center'), #trocar titulo
+        title = h1('Diferença 2026/1 com 2025/1', align = 'center'), #trocar titulo
         width = 6,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -349,7 +349,7 @@ PsexoServer <- function(input, output, session) {
   })
   
   
-  # GRÁFICO 1 - DISTRIBUIÇÃO DE DEFICIÊNCIAS ----
+  # GRÁFICO 1 - DISTRIBUIÇÃO DE SexoS ----
   
   output$plot_1 <- renderHighchart({
     
@@ -385,7 +385,7 @@ PsexoServer <- function(input, output, session) {
       dados = dataplot,
       frequencia = freq,
       grupo = sexo_padrao,
-      titulo_x = "Deficiência",
+      titulo_x = "Sexo",
       titulo_y = "Número de denúncias"
     )
     
@@ -458,7 +458,7 @@ PsexoServer <- function(input, output, session) {
       dados = dataplot,
       frequencia = diferenca,
       grupo = sexo_padrao,
-      titulo_x = "Deficiência",
+      titulo_x = "Sexo",
       titulo_y = "Variação das denúncias"
     )
     
