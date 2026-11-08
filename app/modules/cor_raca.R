@@ -4,7 +4,7 @@ Pcor_racaUI <- function(id) {
     
     fluidRow(
       box(
-        title = h1('Cor/raca x Denuncias - Dados disk 100', align = 'center'), #trocar titulo
+        title = h1('Cor/raca x Denuncias - Dados Disque 100', align = 'center'), #trocar titulo
         width = 12,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -22,7 +22,7 @@ Pcor_racaUI <- function(id) {
     fluidRow(
       
       box(
-        title = h1('Distribuição de cor/raça 1/2026', align = 'center'), #trocar titulo
+        title = h1('Distribuição de Raça', align = 'center'), #trocar titulo
         width = 6,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -30,7 +30,7 @@ Pcor_racaUI <- function(id) {
       ),
       
       box(
-        title = h1('diferenca mesmo semestre ano passado', align = 'center'), #trocar titulo
+        title = h1('Diferença 2026/1 com 2025/1', align = 'center'), #trocar titulo
         width = 6,
         collapsible = TRUE,
         solidHeader = TRUE,
