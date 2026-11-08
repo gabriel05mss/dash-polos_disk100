@@ -4,7 +4,7 @@ Ptipo_atendimentoUI <- function(id) {
     
     fluidRow(
       box(
-        title = h1('Tipo Atendimento x Denuncias - Dados disk 100', align = 'center'), #trocar titulo
+        title = h1('Tipo Atendimento x Denuncias - Dados Disque 100', align = 'center'), #trocar titulo
         width = 12,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -22,7 +22,7 @@ Ptipo_atendimentoUI <- function(id) {
     fluidRow(
       
       box(
-        title = h1('Distribuição Tipo de atendimento', align = 'center'), #trocar titulo
+        title = h1('Distribuição Tipo de Atendimento', align = 'center'), #trocar titulo
         width = 6,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -30,7 +30,7 @@ Ptipo_atendimentoUI <- function(id) {
       ),
       
       box(
-        title = h1('trocar', align = 'center'), #trocar titulo
+        title = h1('Diferença 2026/1 com 2025/1', align = 'center'), #trocar titulo
         width = 6,
         collapsible = TRUE,
         solidHeader = TRUE,
@@ -349,7 +349,7 @@ Ptipo_atendimentoServer <- function(input, output, session) {
   })
   
   
-  # GRÁFICO 1 - DISTRIBUIÇÃO DE DEFICIÊNCIAS ----
+  # GRÁFICO 1 - DISTRIBUIÇÃO DE Tipo de AtendimentoS ----
   
   output$plot_1 <- renderHighchart({
     
@@ -385,7 +385,7 @@ Ptipo_atendimentoServer <- function(input, output, session) {
       dados = dataplot,
       frequencia = freq,
       grupo = canal_padrao,
-      titulo_x = "Deficiência",
+      titulo_x = "Tipo de Atendimento",
       titulo_y = "Número de denúncias"
     )
     
@@ -458,7 +458,7 @@ Ptipo_atendimentoServer <- function(input, output, session) {
       dados = dataplot,
       frequencia = diferenca,
       grupo = canal_padrao,
-      titulo_x = "Deficiência",
+      titulo_x = "Tipo de Atendimento",
       titulo_y = "Variação das denúncias"
     )
     
