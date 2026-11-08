@@ -26,7 +26,7 @@ deficienteUI <- function(id) {
     fluidRow(
       
       box(
-        title = h1('Distribuição de deficiências',
+        title = h1('Distribuição de Deficiências',
                    align = 'center'),
         width = 6,
         collapsible = TRUE,
@@ -40,7 +40,7 @@ deficienteUI <- function(id) {
       ),
       
       box(
-        title = h1('Variação das denúncias',
+        title = h1('Diferença 2026/1 com 2025/1',
                    align = 'center'),
         width = 6,
         collapsible = TRUE,
@@ -482,7 +482,7 @@ deficienteServer <- function(input, output, session) {
       frequencia = diferenca,
       grupo = deficiencia_padrao,
       titulo_x = "Deficiência",
-      titulo_y = "Variação das denúncias"
+      titulo_y = "Diferença 2026/1 com 2025/1"
     )
     
   })
