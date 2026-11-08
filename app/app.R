@@ -141,16 +141,16 @@ server <- function(input, output, session) {
           brandColor = "primary",
           
           bs4SidebarMenu(
+            bs4SidebarMenuItem("Cor/Raça", tabName = "cor_raca", icon = icon("palette")),
             bs4SidebarMenuItem("Sexo", tabName = "Psexo", icon = icon("venus-mars")),
             bs4SidebarMenuItem("Faixa etária", tabName = "Pidade", icon = icon("calendar-alt")),
-            bs4SidebarMenuItem("Pessoa possui Deficiência", tabName = "deficiente", icon = icon("wheelchair")),
-            bs4SidebarMenuItem("Equipe", tabName = "equipe", icon = icon("users")),
-            bs4SidebarMenuItem("Tipo Atendimento", tabName = "tipo_atendimento", icon = icon("clipboard-list")),
-            bs4SidebarMenuItem("Cor/Raça", tabName = "cor_raca", icon = icon("palette")),
             bs4SidebarMenuItem("Escolaridade", tabName = "escolaridade", icon = icon("graduation-cap")),
-            bs4SidebarMenuItem("Grupo Vulnerabilidade", tabName = "grupo_vulneravel", icon = icon("hands-helping")),
             bs4SidebarMenuItem("Orientação sexual", tabName = "orientacao_sexual", icon = icon("rainbow")),
-            bs4SidebarMenuItem("Relação com o Suspeito", tabName = "relacao_suspeito", icon = icon("people-arrows"))
+            bs4SidebarMenuItem("Pessoa possui Deficiência", tabName = "deficiente", icon = icon("wheelchair")),
+            bs4SidebarMenuItem("Tipo Atendimento", tabName = "tipo_atendimento", icon = icon("clipboard-list")),
+            bs4SidebarMenuItem("Grupo Vulnerabilidade", tabName = "grupo_vulneravel", icon = icon("hands-helping")),
+            bs4SidebarMenuItem("Relação com o Suspeito", tabName = "relacao_suspeito", icon = icon("people-arrows")),
+            bs4SidebarMenuItem("Equipe", tabName = "equipe", icon = icon("users"))
           )
         ),
         
