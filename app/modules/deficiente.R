@@ -389,7 +389,7 @@ deficienteServer <- function(input, output, session) {
       dplyr::filter(
         !is.na(data_atendimento),
         !is.na(deficiencia_padrao),
-        data_atendimento == "01/2026"
+        data_atendimento == "01/01/2026"
       ) %>%
       dplyr::group_by(deficiencia_padrao) %>%
       dplyr::summarise(
@@ -432,7 +432,7 @@ deficienteServer <- function(input, output, session) {
       dplyr::filter(
         !is.na(data_atendimento),
         !is.na(deficiencia_padrao),
-        data_atendimento == "01/2026"
+        data_atendimento == "01/01/2026"
       ) %>%
       dplyr::group_by(deficiencia_padrao) %>%
       dplyr::summarise(
@@ -444,7 +444,7 @@ deficienteServer <- function(input, output, session) {
       dplyr::filter(
         !is.na(data_atendimento),
         !is.na(deficiencia_padrao),
-        data_atendimento == "01/2025"
+        data_atendimento == "01/01/2025"
       ) %>%
       dplyr::group_by(deficiencia_padrao) %>%
       dplyr::summarise(

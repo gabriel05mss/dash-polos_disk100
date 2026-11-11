@@ -27,7 +27,6 @@ modulos <- c(
   "orientacao_sexual.R",
   "relacao_suspeito.R",
   "tipo_atendimento.R",
-  "grupo_vulneravel.R",
   "equipe.R"
 )
 
@@ -148,7 +147,6 @@ server <- function(input, output, session) {
             bs4SidebarMenuItem("Orientação sexual", tabName = "orientacao_sexual", icon = icon("rainbow")),
             bs4SidebarMenuItem("Pessoa possui Deficiência", tabName = "deficiente", icon = icon("wheelchair")),
             bs4SidebarMenuItem("Tipo Atendimento", tabName = "tipo_atendimento", icon = icon("clipboard-list")),
-            bs4SidebarMenuItem("Grupo Vulnerabilidade", tabName = "grupo_vulneravel", icon = icon("hands-helping")),
             bs4SidebarMenuItem("Relação com o Suspeito", tabName = "relacao_suspeito", icon = icon("people-arrows")),
             bs4SidebarMenuItem("Equipe", tabName = "equipe", icon = icon("users"))
           )
@@ -163,7 +161,6 @@ server <- function(input, output, session) {
             bs4TabItem(tabName = "tipo_atendimento", Ptipo_atendimentoUI("tipo_atendimento")),
             bs4TabItem(tabName = "cor_raca", Pcor_racaUI("cor_raca")),
             bs4TabItem(tabName = "escolaridade", PescolaridadeUI("escolaridade")),
-            bs4TabItem(tabName = "grupo_vulneravel", PgrupovUI("grupo_vulneravel")),
             bs4TabItem(tabName = "orientacao_sexual", PorientacaoUI("orientacao_sexual")),
             bs4TabItem(tabName = "relacao_suspeito", PsuspeitoUI("relacao_suspeito"))
           )
@@ -189,7 +186,6 @@ server <- function(input, output, session) {
   callModule(deficienteServer, "deficiente")
   callModule(PsuspeitoServer, "relacao_suspeito")
   callModule(PorientacaoServer, "orientacao_sexual")
-  callModule(PgrupovServer, "grupo_vulneravel")
   callModule(Ptipo_atendimentoServer, "tipo_atendimento")
   callModule(equipeServer, "equipe")
 }

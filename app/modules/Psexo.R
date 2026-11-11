@@ -366,7 +366,7 @@ PsexoServer <- function(input, output, session) {
       dplyr::filter(
         !is.na(data_atendimento),
         !is.na(sexo_padrao),
-        data_atendimento == "01/2026"
+        data_atendimento == "01/01/2026"
       ) %>%
       dplyr::group_by(sexo_padrao) %>%
       dplyr::summarise(
@@ -409,7 +409,7 @@ PsexoServer <- function(input, output, session) {
       dplyr::filter(
         !is.na(data_atendimento),
         !is.na(sexo_padrao),
-        data_atendimento == "01/2026"
+        data_atendimento == "01/01/2026"
       ) %>%
       dplyr::group_by(sexo_padrao) %>%
       dplyr::summarise(
@@ -421,7 +421,7 @@ PsexoServer <- function(input, output, session) {
       dplyr::filter(
         !is.na(data_atendimento),
         !is.na(sexo_padrao),
-        data_atendimento == "01/2025"
+        data_atendimento == "01/01/2025"
       ) %>%
       dplyr::group_by(sexo_padrao) %>%
       dplyr::summarise(
