@@ -46,7 +46,7 @@ PidadeUI <- function(id) {
         style = "overflow-x: auto;",
         collapsible = TRUE,
         solidHeader = TRUE,
-        withSpinner(highchartOutput(ns("tabela")), type = 1, color = "#ffae00", size = 2)
+        withSpinner(highchartOutput(ns("plot_3")), type = 1, color = "#ffae00", size = 2)
       )
     )
   )
